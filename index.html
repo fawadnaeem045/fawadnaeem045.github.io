@@ -35,7 +35,7 @@
           </div>
         </div>
       </div>
-      <div id="mySidenav" class="sidenav" role="navigation" aria-label="Primary" aria-hidden="true">
+      <div id="mySidenav" class="sidenav" role="navigation" aria-label="Primary" aria-hidden="true" aria-modal="true" tabindex="-1">
         <div class="sidenav-header">
           <button type="button" class="closebtn" onclick="closeNav()" aria-label="Close navigation">&times;</button>
         </div>
@@ -51,6 +51,7 @@
           <a href="#contact" class="nav-item hover-effect"><i class="fa fa-envelope"></i> Contact</a>
         </nav>
       </div>
+      <div class="sidenav-backdrop" onclick="closeNav()" aria-hidden="true"></div>
       <div class="heading text-center position-fixed nav-trigger-wrap">
         <button class="nav-trigger" aria-controls="mySidenav" aria-expanded="false" onclick="if(document.getElementById('mySidenav').style.width === '250px') { closeNav(); } else { openNav(); }">
           <i class="fa fa-bars menu-icon fa-lg"></i>
@@ -81,9 +82,9 @@
               <h4 class="degree mb-2">IT/IS Auditor</h4>
               <h5 class="institution mb-2">Khushhali Microfinance Bank Limited | May 2024 - Present</h5>
               <div class="image-container mb-2">
-                <img src="img/KMBL.png" alt="Khushhali Bank Logo" class="img-fluid logo-img">
+                <img src="img/KMBL.png" alt="Khushhali Bank Logo" class="img-fluid logo-img" loading="lazy">
               </div>
-              <p><a href="https://khushhalibank.com.pk/" target="_blank" class="text-decoration-none org-link">khushhalibank.com.pk</a></p>
+              <p><a href="https://khushhalibank.com.pk/" target="_blank" rel="noopener" class="text-decoration-none org-link">khushhalibank.com.pk</a></p>
             </div>
           </div>
 
@@ -94,7 +95,7 @@
               <div class="image-container mb-2">
                 <img src="img/sys.png" alt="Systems Limited Logo" class="img-fluid logo-img">
               </div>
-              <p><a href="https://www.systemsltd.com" target="_blank" class="text-decoration-none org-link">systemsltd.com</a></p>
+              <p><a href="https://www.systemsltd.com" target="_blank" rel="noopener" class="text-decoration-none org-link">systemsltd.com</a></p>
             </div>
           </div>
 
@@ -103,9 +104,9 @@
               <h4 class="degree mb-2">Intern (Python Developer)</h4>
               <h5 class="institution mb-2">Axiom World | Jun 2021 - Sep 2021</h5>
               <div class="image-container mb-2">
-                <img src="img/axiom.png" alt="Axiom World Logo" class="img-fluid logo-img">
+                <img src="img/axiom.png" alt="Axiom World Logo" class="img-fluid logo-img" loading="lazy">
               </div>
-              <p><a href="https://axiomworld.net" target="_blank" class="text-decoration-none org-link">axiomworld.net</a></p>
+              <p><a href="https://axiomworld.net" target="_blank" rel="noopener" class="text-decoration-none org-link">axiomworld.net</a></p>
             </div>
           </div>
         </div>
@@ -134,9 +135,9 @@
               <h4 class="degree mb-2" style="font-size: 1.5rem;">Bachelor of Science in Computer Science (BSCS)</h4>
               <h5 class="institution mb-2" style="font-size: 1.5rem; color: #6c757d;">Institute of Southern Punjab | 2016 - 2021</h5>
               <div class="image-container mb-2">
-                <img src="img/ISP-LOGO.png" alt="ISP Logo" class="img-fluid" style="max-width: 35%; height: 100px; object-fit: contain;">
+                 <img src="img/ISP-LOGO.png" alt="ISP Logo" class="img-fluid logo-img" loading="lazy">
               </div>
-              <p><a href="https://www.isp.edu.pk" target="_blank" class="text-decoration-none" style="font-size: 1.5rem;">www.isp.edu.pk</a></p>
+              <p><a href="https://www.isp.edu.pk" target="_blank" rel="noopener" class="text-decoration-none org-link">www.isp.edu.pk</a></p>
             </div>
           </div>
 
@@ -147,7 +148,7 @@
               <div class="image-container mb-2">
                 <img src="img/colg.png" alt="PGC Logo" class="img-fluid logo-img">
               </div>
-              <p><a href="https://www.pgc.edu" target="_blank" class="text-decoration-none org-link">www.pgc.edu</a></p>
+              <p><a href="https://www.pgc.edu" target="_blank" rel="noopener" class="text-decoration-none org-link">www.pgc.edu</a></p>
             </div>
           </div>
 
@@ -158,7 +159,7 @@
               <div class="image-container mb-2">
                 <img src="img/nishat.png" alt="Nishat School Logo" class="img-fluid logo-img">
               </div>
-              <p><a href="https://nishat.edu.pk" target="_blank" class="text-decoration-none org-link">www.nishat.edu.pk</a></p>
+              <p><a href="https://nishat.edu.pk" target="_blank" rel="noopener" class="text-decoration-none org-link">www.nishat.edu.pk</a></p>
             </div>
           </div>
         </div>
@@ -170,6 +171,15 @@
       <div class="heading text-center mb-5">
         <h2 class="fw-bold">Get In Touch</h2>
         <div class="heading-line mx-auto mt-3"></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <p class="lead mb-4">Have a project, opportunity, or just want to say hi? I’m open to collaboration and interesting challenges.</p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a class="btn-brand" href="mailto:fawadnaeem045@gmail.com">Email Me</a>
+            <a class="btn-outline-brand" href="https://www.linkedin.com/in/fawadnaeem045/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -209,6 +219,11 @@
       sidenav.setAttribute('aria-hidden', 'false');
       var trigger = document.querySelector('.nav-trigger');
       if (trigger) trigger.setAttribute('aria-expanded', 'true');
+      var backdrop = document.querySelector('.sidenav-backdrop');
+      if (backdrop) { backdrop.classList.add('show'); }
+      document.body.classList.add('nav-open');
+      var firstLink = sidenav.querySelector('a');
+      if (firstLink) { firstLink.focus(); }
     }
 
     function closeNav() {
@@ -217,7 +232,13 @@
       sidenav.setAttribute('aria-hidden', 'true');
       var trigger = document.querySelector('.nav-trigger');
       if (trigger) trigger.setAttribute('aria-expanded', 'false');
+      var backdrop = document.querySelector('.sidenav-backdrop');
+      if (backdrop) { backdrop.classList.remove('show'); }
+      document.body.classList.remove('nav-open');
     }
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape') closeNav();
+    });
   </script>
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js" defer></script>
   <script src="js/jquery.js" defer></script>
