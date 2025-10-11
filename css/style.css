@@ -6,6 +6,15 @@
 */
 /* --- General --- */
 
+:root{
+  --brand: #92DD03;
+  --text: #333333;
+  --muted: #6c757d;
+  --bg-light: #f0f0f0;
+  --bg-dark: rgba(25,25,25,0.95);
+  --glass: rgba(25,25,25,0.85);
+}
+
 body {
 	font-family:'Montserrat',sans-serif;
 	font-size:16px;
@@ -13,7 +22,7 @@ body {
 	color:rgb(146, 146, 146);
 	font-weight:400;
 	overflow-x:hidden;
-	background-color: rgb(240, 240, 240);
+	background-color: var(--bg-light);
 }
 .Snavbar {
 	overflow: hidden;
@@ -36,45 +45,45 @@ body {
 		
 	  }
   }
-  .iconify{
-	color: #92DD03;
+.iconify{ color: var(--brand); }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: var(--bg-dark);
+    overflow-x: hidden;
+    transition: width 0.3s ease-in-out;
+    padding-top: 60px;
   }
-	  .sidenav {
-		height: 100%;
-		width: 0;
-		position: fixed;
-		z-index: 1;
-		top: 0;
-		right: 0;
-		background-color: rgb(240, 240, 240);
-		overflow-x: hidden;
-		transition: 0.5s;
-		padding-top: 60px;
-	  }
 	  
-	  .sidenav a {
-		font-family:'Playball',cursive;
-		padding: 8px 8px 8px 32px;
-		text-decoration: none;
-		font-size: 25px;
-		  color:#92DD03 ;
-	
-		display: block;
-		transition: 0.3s;
-	  }
+  .sidenav a {
+    font-family:'Playball',cursive;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ffffff;
+    display: block;
+    transition: color 0.3s ease;
+  }
 	  
-	  .sidenav a:hover {
-		color: #2b2a2a;
-	  }
+  .sidenav a:hover { color: var(--brand); }
+
+  .sidenav .nav-item i { color: var(--brand); margin-right: 6px; }
 	  
-	  .sidenav .closebtn {
-		position: absolute;
-		top: 50px;
-		right: 50px;
-		/* bottom: 5px; */
-		font-size: 36px;
-		/* margin-left: 60px; */
-	  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 32px;
+    padding: 8px 12px;
+    background: transparent;
+    color: var(--brand);
+    border: none;
+    cursor: pointer;
+  }
 	  
 	  @media screen and (max-height: 600px) {
 		.sidenav {padding-top: 15px;}
@@ -90,7 +99,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 a,a:hover {
-	color:#92DD03 ;
+	color:var(--brand);
 	text-decoration: none;
 }
 img {max-width: 100%;}
@@ -243,6 +252,54 @@ header {
 .parallax-pattern-overlay {
 	background-image:url(../img/pattern.png);
 	background-repeat: repeat;
+}
+
+/* --- Hero --- */
+.hero{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.hero-logo{ max-width: 300px; height: auto; }
+.hero-title{
+  color: var(--brand);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* --- Nav Trigger --- */
+.nav-trigger-wrap{ top: 20px; right: 20px; z-index: 1100; }
+.nav-trigger{
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  background: var(--glass);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  color: #fff;
+}
+.nav-trigger:hover{ background: var(--bg-dark); }
+.nav-trigger .menu-icon{ color: var(--brand); vertical-align: middle; }
+.nav-trigger-label{ font-size: 1.1em; margin-left: 8px; vertical-align: middle; color: #fff; }
+
+/* --- Cards / Typographic tweaks --- */
+.degree{ font-size: 1.5rem; }
+.institution{ font-size: 1.5rem; color: var(--muted); }
+.logo-img{ max-width: 35%; height: 100px; object-fit: contain; }
+.org-link{ font-size: 1.5rem; }
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  .parallax{ background-attachment: scroll !important; }
 }
 /* --- Heading --- */
 

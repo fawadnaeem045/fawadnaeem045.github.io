@@ -21,66 +21,40 @@
   <div class="wrapper" id="wrapper">
     <header>
       <div class="banner row" id="banner">
-        <div class="parallax text-center"
-          style="background-image: url(img/1.jpg); background-size: cover; background-position: center;">
+        <div class="parallax text-center" style="background-image: url(img/1.jpg); background-size: cover; background-position: center;">
           <div class="parallax-pattern-overlay">
-            <div class="container text-center"
-              style="min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; padding: 2rem;">
+            <div class="container text-center hero">
               <a href="#" class="mb-4">
-                <img id="site-title" class="wow fadeInDown img-fluid" wow-data-delay="0.0s" wow-data-duration="0.9s"
-                  src="img/2.png" alt="Site Logo" style="max-width: 300px;" />
+                <img id="site-title" class="wow fadeInDown img-fluid hero-logo" wow-data-delay="0.0s" wow-data-duration="0.9s"
+                  src="img/2.png" alt="Site Logo" />
               </a>
-              <h2 class="intro heading"
-                style="color: #92DD03; font-size: clamp(2rem, 5vw, 3.5rem); margin-top: 2rem; text-align: center; width: 100%;">
+              <h2 class="intro heading hero-title">
                 Fawad Naeem
               </h2>
             </div>
           </div>
         </div>
       </div>
-      <div id="mySidenav" class="sidenav"
-        style="transition: 0.3s ease-in-out; background-color: rgba(25, 25, 25, 0.95);">
+      <div id="mySidenav" class="sidenav" role="navigation" aria-label="Primary" aria-hidden="true">
         <div class="sidenav-header">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            style="font-size: 2rem; padding: 0.5rem 1rem; color: #92DD03;">&times;</a>
+          <button type="button" class="closebtn" onclick="closeNav()" aria-label="Close navigation">&times;</button>
         </div>
         <nav class="sidenav-menu">
-          <a href="#wrapper" class="nav-item hover-effect" style="color: #fff; transition: color 0.3s ease;"><i
-              class="fa fa-arrow-up" style="color: #92DD03;"></i> Page up</a>
-          <a href="#aboutus" class="nav-item hover-effect" style="color: #fff; transition: color 0.3s ease;"><i
-              class="fa fa-user" style="color: #92DD03;"></i> About me</a>
-          <a href="#Experience" class="nav-item hover-effect" style="color: #fff; transition: color 0.3s ease;"><i
-              class="fa fa-briefcase" style="color: #92DD03;"></i> Experience</a>
-              <a href="#education" class="nav-item hover-effect" style="color: #fff; transition: color 0.3s ease;"><i
-                class="fa fa-graduation-cap" style="color: #92DD03;"></i> Education</a>
-          <a href="portfolio/portfolio.html" class="nav-item hover-effect"
-            style="color: #fff; transition: color 0.3s ease;"><i class="fa fa-folder-open" style="color: #92DD03;"></i>
-            Portfolio</a>
-          <a href="learning/learning.html" class="nav-item hover-effect"
-            style="color: #fff; transition: color 0.3s ease;"><i class="fa fa-book" style="color: #92DD03;"></i>
-            Learning</a>
-          <a href="Resume-Fawad-Naeem.pdf" download="Resume_Fawad_Naeem" class="nav-item hover-effect"
-            style="color: #fff; transition: color 0.3s ease;"><i class="fa fa-download" style="color: #92DD03;"></i>
+          <a href="#wrapper" class="nav-item hover-effect"><i class="fa fa-arrow-up"></i> Page up</a>
+          <a href="#aboutus" class="nav-item hover-effect"><i class="fa fa-user"></i> About me</a>
+          <a href="#Experience" class="nav-item hover-effect"><i class="fa fa-briefcase"></i> Experience</a>
+          <a href="#education" class="nav-item hover-effect"><i class="fa fa-graduation-cap"></i> Education</a>
+          <a href="portfolio/portfolio.html" class="nav-item hover-effect"><i class="fa fa-folder-open"></i> Portfolio</a>
+          <a href="learning/learning.html" class="nav-item hover-effect"><i class="fa fa-book"></i> Learning</a>
+          <a href="Resume-Fawad-Naeem.pdf" download="Resume_Fawad_Naeem" class="nav-item hover-effect"><i class="fa fa-download"></i>
             Download CV</a>
-          <a href="#contact" class="nav-item hover-effect" style="color: #fff; transition: color 0.3s ease;"><i
-              class="fa fa-envelope" style="color: #92DD03;"></i> Contact</a>
+          <a href="#contact" class="nav-item hover-effect"><i class="fa fa-envelope"></i> Contact</a>
         </nav>
       </div>
-      <div class="heading text-center position-fixed" style="top: 20px; right: 20px; z-index: 1000;">
-        <button class="nav-trigger" style="border: none; 
-                       padding: 12px 20px;
-                       border-radius: 30px;
-                       background: rgba(25, 25, 25, 0.85);
-                       backdrop-filter: blur(10px);
-                       transition: all 0.3s ease;
-                       cursor: pointer;
-                       box-shadow: 0 4px 6px rgba(0,0,0,0.1);"
-          onmouseover="this.style.background='rgba(25, 25, 25, 0.95)'"
-          onmouseout="this.style.background='rgba(25, 25, 25, 0.85)'"
-          onclick="if(document.getElementById('mySidenav').style.width === '250px') { closeNav(); } else { openNav(); }">
-          <i class="fa fa-bars menu-icon fa-lg" style="vertical-align: middle; color: #92DD03;"></i>
-          <span class="heading d-none d-md-inline-block"
-            style="font-size: 1.1em; margin-left: 8px; vertical-align: middle; color: #fff;">NAVIGATION</span>
+      <div class="heading text-center position-fixed nav-trigger-wrap">
+        <button class="nav-trigger" aria-controls="mySidenav" aria-expanded="false" onclick="if(document.getElementById('mySidenav').style.width === '250px') { closeNav(); } else { openNav(); }">
+          <i class="fa fa-bars menu-icon fa-lg"></i>
+          <span class="heading d-none d-md-inline-block nav-trigger-label">NAVIGATION</span>
         </button>
       </div>
     </header>
@@ -104,34 +78,34 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
             <div class="experience-card text-center p-3 h-100 shadow-sm rounded">
-              <h4 class="degree mb-2" style="font-size: 1.5rem;">IT/IS Auditor</h4>
-              <h5 class="institution mb-2" style="font-size: 1.5rem; color: #6c757d;">Khushhali Microfinance Bank Limited | May 2024 - Present</h5>
+              <h4 class="degree mb-2">IT/IS Auditor</h4>
+              <h5 class="institution mb-2">Khushhali Microfinance Bank Limited | May 2024 - Present</h5>
               <div class="image-container mb-2">
-                <img src="img/KMBL.png" alt="Khushhali Bank Logo" class="img-fluid" style="max-width: 35%; height: 100px; object-fit: contain;">
+                <img src="img/KMBL.png" alt="Khushhali Bank Logo" class="img-fluid logo-img">
               </div>
-              <p><a href="https://khushhalibank.com.pk/" target="_blank" class="text-decoration-none" style="font-size: 1.5rem;">khushhalibank.com.pk</a></p>
+              <p><a href="https://khushhalibank.com.pk/" target="_blank" class="text-decoration-none org-link">khushhalibank.com.pk</a></p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.6s">
             <div class="experience-card text-center p-3 h-100 shadow-sm rounded">
-              <h4 class="degree mb-2" style="font-size: 1.5rem;">Intern (JavaScript Developer)</h4>
-              <h5 class="institution mb-2" style="font-size: 1.5rem; color: #6c757d;">Systems Limited | Oct 2021 - May 2022</h5>
+              <h4 class="degree mb-2">Intern (JavaScript Developer)</h4>
+              <h5 class="institution mb-2">Systems Limited | Oct 2021 - May 2022</h5>
               <div class="image-container mb-2">
-                <img src="img/sys.png" alt="Systems Limited Logo" class="img-fluid" style="max-width: 35%; height: 100px; object-fit: contain;">
+                <img src="img/sys.png" alt="Systems Limited Logo" class="img-fluid logo-img">
               </div>
-              <p><a href="https://www.systemsltd.com" target="_blank" class="text-decoration-none" style="font-size: 1.5rem;">systemsltd.com</a></p>
+              <p><a href="https://www.systemsltd.com" target="_blank" class="text-decoration-none org-link">systemsltd.com</a></p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.9s">
             <div class="experience-card text-center p-3 h-100 shadow-sm rounded">
-              <h4 class="degree mb-2" style="font-size: 1.5rem;">Intern (Python Developer)</h4>
-              <h5 class="institution mb-2" style="font-size: 1.5rem; color: #6c757d;">Axiom World | Jun 2021 - Sep 2021</h5>
+              <h4 class="degree mb-2">Intern (Python Developer)</h4>
+              <h5 class="institution mb-2">Axiom World | Jun 2021 - Sep 2021</h5>
               <div class="image-container mb-2">
-                <img src="img/axiom.png" alt="Axiom World Logo" class="img-fluid" style="max-width: 35%; height: 100px; object-fit: contain;">
+                <img src="img/axiom.png" alt="Axiom World Logo" class="img-fluid logo-img">
               </div>
-              <p><a href="https://axiomworld.net" target="_blank" class="text-decoration-none" style="font-size: 1.5rem;">axiomworld.net</a></p>
+              <p><a href="https://axiomworld.net" target="_blank" class="text-decoration-none org-link">axiomworld.net</a></p>
             </div>
           </div>
         </div>
@@ -146,54 +120,51 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 mb-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.6s">
             <div class="education-card text-center p-3 h-100 shadow-sm rounded">
-              <h4 class="degree mb-2" style="font-size: 1.5rem;">Master of Science in Cyber Security (MSCY)</h4>
-              <h5 class="institution mb-2" style="font-size: 1.5rem; color: #6c757d;">FAST NUCES Islamabad | 2024 - 2026</h5>
+              <h4 class="degree mb-2">Master of Science in Cyber Security (MSCY)</h4>
+              <h5 class="institution mb-2">FAST NUCES Islamabad | 2024 - 2026</h5>
               <div class="image-container mb-2">
-                <img src="img/Fast-NUCES.png" alt="FAST NUCES Logo" class="img-fluid" style="max-width: 35%; height: 100px; object-fit: contain;">
+                <img src="img/Fast-NUCES.png" alt="FAST NUCES Logo" class="img-fluid logo-img">
               </div>
-              <p><a href="http://isb.nu.edu.pk/" target="_blank" class="text-decoration-none" style="font-size: 1.5rem;">isb.nu.edu.pk</a></p>
+              <p><a href="http://isb.nu.edu.pk/" target="_blank" class="text-decoration-none org-link">isb.nu.edu.pk</a></p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mb-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
             <div class="education-card text-center p-3 h-100 shadow-sm rounded">
-              <h4 class="degree mb-2" style="font-size: 1.5rem;">Bachelor of Science in Computer Science (BSCS)</h4>
-              <h5 class="institution mb-2" style="font-size: 1.5rem; color: #6c757d;">Institute of Southern Punjab | 2016 - 2021</h5>
+              <h4 class="degree mb-2">Bachelor of Science in Computer Science (BSCS)</h4>
+              <h5 class="institution mb-2">Institute of Southern Punjab | 2016 - 2021</h5>
               <div class="image-container mb-2">
-                <img src="img/ISP-LOGO.png" alt="ISP Logo" class="img-fluid" style="max-width: 35%; height: 100px; object-fit: contain;">
+                <img src="img/ISP-LOGO.png" alt="ISP Logo" class="img-fluid logo-img">
               </div>
-              <p><a href="https://www.isp.edu.pk" target="_blank" class="text-decoration-none" style="font-size: 1.5rem;">www.isp.edu.pk</a></p>
+              <p><a href="https://www.isp.edu.pk" target="_blank" class="text-decoration-none org-link">www.isp.edu.pk</a></p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mb-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.6s">
             <div class="education-card text-center p-3 h-100 shadow-sm rounded">
-              <h4 class="degree mb-2" style="font-size: 1.5rem;">Intermediate (Pre-Engineering)</h4>
-              <h5 class="institution mb-2" style="font-size: 1.5rem; color: #6c757d;">Punjab Group of Colleges | 2013 - 2015</h5>
+              <h4 class="degree mb-2">Intermediate (Pre-Engineering)</h4>
+              <h5 class="institution mb-2">Punjab Group of Colleges | 2013 - 2015</h5>
               <div class="image-container mb-2">
-                <img src="img/colg.png" alt="PGC Logo" class="img-fluid" style="max-width: 35%; height: 100px; object-fit: contain;">
+                <img src="img/colg.png" alt="PGC Logo" class="img-fluid logo-img">
               </div>
-              <p><a href="https://www.pgc.edu" target="_blank" class="text-decoration-none" style="font-size: 1.5rem;">www.pgc.edu</a></p>
+              <p><a href="https://www.pgc.edu" target="_blank" class="text-decoration-none org-link">www.pgc.edu</a></p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mb-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.9s">
             <div class="education-card text-center p-3 h-100 shadow-sm rounded">
-              <h4 class="degree mb-2" style="font-size: 1.5rem;">Matriculation (Biology)</h4>
-              <h5 class="institution mb-2" style="font-size: 1.5rem; color: #6c757d;">Nishat High School | 2003 - 2013</h5>
+              <h4 class="degree mb-2">Matriculation (Biology)</h4>
+              <h5 class="institution mb-2">Nishat High School | 2003 - 2013</h5>
               <div class="image-container mb-2">
-                <img src="img/nishat.png" alt="Nishat School Logo" class="img-fluid" style="max-width: 35%; height: 100px; object-fit: contain;">
+                <img src="img/nishat.png" alt="Nishat School Logo" class="img-fluid logo-img">
               </div>
-              <p><a href="https://nishat.edu.pk" target="_blank" class="text-decoration-none" style="font-size: 1.5rem;">www.nishat.edu.pk</a></p>
+              <p><a href="https://nishat.edu.pk" target="_blank" class="text-decoration-none org-link">www.nishat.edu.pk</a></p>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-  </div>
-  </div>
-  </section>
+  
   <section class="contact" id="contact">
     <div class="container">
       <div class="heading text-center mb-5">
@@ -233,27 +204,35 @@
   </div>
   <script>
     function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
+      var sidenav = document.getElementById('mySidenav');
+      sidenav.style.width = '250px';
+      sidenav.setAttribute('aria-hidden', 'false');
+      var trigger = document.querySelector('.nav-trigger');
+      if (trigger) trigger.setAttribute('aria-expanded', 'true');
     }
 
     function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
+      var sidenav = document.getElementById('mySidenav');
+      sidenav.style.width = '0';
+      sidenav.setAttribute('aria-hidden', 'true');
+      var trigger = document.querySelector('.nav-trigger');
+      if (trigger) trigger.setAttribute('aria-expanded', 'false');
     }
   </script>
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  <script src="js/jquery.js"></script>
-  <script src="js/modernizr.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/parallax.js"></script>
-  <script src="js/easing.js"></script>
-  <script src="js/wow.js"></script>
-  <script src="js/masonry.js"></script>
-  <script src="js/imgloaded.js"></script>
-  <script src="js/classie.js"></script>
-  <script src="js/colorfinder.js"></script>
-  <script src="js/gridscroll.js"></script>
-  <script src="js/contact.js"></script>
-  <script src="js/common.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js" defer></script>
+  <script src="js/jquery.js" defer></script>
+  <script src="js/modernizr.js" defer></script>
+  <script src="js/bootstrap.min.js" defer></script>
+  <script src="js/parallax.js" defer></script>
+  <script src="js/easing.js" defer></script>
+  <script src="js/wow.js" defer></script>
+  <script src="js/masonry.js" defer></script>
+  <script src="js/imgloaded.js" defer></script>
+  <script src="js/classie.js" defer></script>
+  <script src="js/colorfinder.js" defer></script>
+  <script src="js/gridscroll.js" defer></script>
+  <script src="js/contact.js" defer></script>
+  <script src="js/common.js" defer></script>
 
 </body>
 
