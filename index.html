@@ -5,256 +5,229 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fawad Naeem</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/font-awesome.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link href="css/style.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <link
-    href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
-    rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+  <title>Fawad Naeem | IT Auditor & Cybersecurity</title>
+  <meta name="description" content="Minimal portfolio for Fawad Naeem, IT/IS Auditor and cybersecurity graduate student based in Pakistan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-bxVoddGYI0okfmxjpQGHRFad1Yw8b7RczhOIpaKosLGLfUWcKqcBHQYaWV7k/akdUSHh3DquynjUTyAU3lH3qg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="wrapper" id="wrapper">
-    <header>
-      <div class="banner row" id="banner">
-        <div class="parallax text-center" style="background-image: url(img/1.jpg); background-size: cover; background-position: center;">
-          <div class="parallax-pattern-overlay">
-            <div class="container text-center hero">
-              <a href="#" class="mb-4">
-                <img id="site-title" class="wow fadeInDown img-fluid hero-logo" wow-data-delay="0.0s" wow-data-duration="0.9s"
-                  src="img/2.png" alt="Site Logo" />
-              </a>
-              <h2 class="intro heading hero-title">
-                Fawad Naeem
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="mySidenav" class="sidenav" role="navigation" aria-label="Primary" aria-hidden="true" aria-modal="true" tabindex="-1">
-        <div class="sidenav-header">
-          <button type="button" class="closebtn" onclick="closeNav()" aria-label="Close navigation">&times;</button>
-        </div>
-        <nav class="sidenav-menu">
-          <a href="#wrapper" class="nav-item hover-effect"><i class="fa fa-arrow-up"></i> Page up</a>
-          <a href="#aboutus" class="nav-item hover-effect"><i class="fa fa-user"></i> About me</a>
-          <a href="#Experience" class="nav-item hover-effect"><i class="fa fa-briefcase"></i> Experience</a>
-          <a href="#education" class="nav-item hover-effect"><i class="fa fa-graduation-cap"></i> Education</a>
-          <a href="portfolio/portfolio.html" class="nav-item hover-effect"><i class="fa fa-folder-open"></i> Portfolio</a>
-          <a href="learning/learning.html" class="nav-item hover-effect"><i class="fa fa-book"></i> Learning</a>
-          <a href="Resume-Fawad-Naeem.pdf" download="Resume_Fawad_Naeem" class="nav-item hover-effect"><i class="fa fa-download"></i>
-            Download CV</a>
-          <a href="#contact" class="nav-item hover-effect"><i class="fa fa-envelope"></i> Contact</a>
-        </nav>
-      </div>
-      <div class="sidenav-backdrop" onclick="closeNav()" aria-hidden="true"></div>
-      <div class="heading text-center position-fixed nav-trigger-wrap">
-        <button class="nav-trigger" aria-controls="mySidenav" aria-expanded="false" onclick="if(document.getElementById('mySidenav').style.width === '250px') { closeNav(); } else { openNav(); }">
-          <i class="fa fa-bars menu-icon fa-lg"></i>
-          <span class="heading d-none d-md-inline-block nav-trigger-label">NAVIGATION</span>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell" id="top">
+    <header class="site-header" aria-label="Primary">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <span class="brand-mark">F</span>
+          <span class="brand-name">Fawad Naeem</span>
+        </a>
+        <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
         </button>
-      </div>
+        <div class="nav-links" id="primary-menu">
+          <a href="#summary">Summary</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="portfolio/portfolio.html">Portfolio</a>
+          <a href="learning/learning.html">Learning</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <section class="hero hero-minimal" id="home">
+        <div class="hero-text">
+          <div class="hero-actions">
+            <a class="btn primary" href="mailto:fawadnaeem045@gmail.com">Start a conversation</a>
+            <a class="btn ghost" href="Resume_Fawad_Naeem.pdf" download>Download resume</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/fawadnaeem045/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="media-card">
+            <picture class="hero-photo">
+              <source srcset="img/2.webp" type="image/webp">
+              <img src="img/2.png" alt="Portrait of Fawad Naeem">
+            </picture>
+          </div>
+        </div>
+      </section>
     </header>
-    <section class="aboutus" id="aboutus">
-      <div class="container">
-        <div class="heading text-center">
-          <h2>Summary</h2>
-          <h3>My passion for computer science drives me to continuously learn and explore emerging technologies. I am
-            enthusiastic about solving complex problems and developing innovative solutions to enhance user experiences
-            and support business growth. With a strong work ethic, I actively seek constructive feedback to refine my
-            skills further. Currently, I am pursuing studies in cybersecurity, with a focus on Artificial Intelligence,
-            aiming to tackle security challenges in Large Language Models. </h3>
-        </div>
-      </div>
-    </section>
-    <section id="Experience" class="experience-section py-5">
-      <div class="container">
-        <div class="heading text-center mb-5">
-          <h2>Experience</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
-            <div class="experience-card text-center p-3 h-100 shadow-sm rounded">
-              <h4 class="degree mb-2">IT/IS Auditor</h4>
-              <h5 class="institution mb-2">Khushhali Microfinance Bank Limited | May 2024 - Present</h5>
-              <div class="image-container mb-2">
-                <img src="img/KMBL.png" alt="Khushhali Bank Logo" class="img-fluid logo-img" loading="lazy">
-              </div>
-              <p><a href="https://khushhalibank.com.pk/" target="_blank" rel="noopener" class="text-decoration-none org-link">khushhalibank.com.pk</a></p>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 mb-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.6s">
-            <div class="experience-card text-center p-3 h-100 shadow-sm rounded">
-              <h4 class="degree mb-2">Intern (JavaScript Developer)</h4>
-              <h5 class="institution mb-2">Systems Limited | Oct 2021 - May 2022</h5>
-              <div class="image-container mb-2">
-                <img src="img/sys.png" alt="Systems Limited Logo" class="img-fluid logo-img">
-              </div>
-              <p><a href="https://www.systemsltd.com" target="_blank" rel="noopener" class="text-decoration-none org-link">systemsltd.com</a></p>
-            </div>
-          </div>
+    <main id="main">
+      <section class="section" id="summary">
+        <div class="section-header">
+          <p class="eyebrow">Summary</p>
+        </div>
+        <div class="section-body">
+          <p>My passion for computer science drives me to continuously learn and explore emerging technologies. I thrive on solving complex problems and developing innovative solutions that enhance user experience and drive business growth. With a strong work ethic and a commitment to self-improvement, I actively seek feedback to refine my skills. I am currently pursuing an MS in Cybersecurity, focusing on the intersection of Artificial Intelligence and security, particularly addressing emerging challenges in Large Language Models (LLMs).</p>
+        </div>
+      </section>
 
-          <div class="col-lg-4 col-md-6 mb-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.9s">
-            <div class="experience-card text-center p-3 h-100 shadow-sm rounded">
-              <h4 class="degree mb-2">Intern (Python Developer)</h4>
-              <h5 class="institution mb-2">Axiom World | Jun 2021 - Sep 2021</h5>
-              <div class="image-container mb-2">
-                <img src="img/axiom.png" alt="Axiom World Logo" class="img-fluid logo-img" loading="lazy">
-              </div>
-              <p><a href="https://axiomworld.net" target="_blank" rel="noopener" class="text-decoration-none org-link">axiomworld.net</a></p>
-            </div>
-          </div>
+      <section class="section" id="experience">
+        <div class="section-header">
+          <p class="eyebrow">Experience</p>
         </div>
-      </div>
-    </section>
-    <section class="education" id="education">
-      <div class="container">
-        <div class="heading text-center mb-5">
-          <h2>Education</h2>
-        </div>
-        
-        <div class="row">
-          <div class="col-lg-3 col-md-6 mb-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.6s">
-            <div class="education-card text-center p-3 h-100 shadow-sm rounded">
-              <h4 class="degree mb-2">Master of Science in Cyber Security (MSCY)</h4>
-              <h5 class="institution mb-2">FAST NUCES Islamabad | 2024 - 2026</h5>
-              <div class="image-container mb-2">
-                <img src="img/Fast-NUCES.png" alt="FAST NUCES Logo" class="img-fluid logo-img">
+        <div class="card-grid">
+          <article class="card">
+            <p class="muted role-date">Sep 2025 - Nov 2025</p>
+            <header class="card-head">
+              <img src="img/ubank.svg" alt="U Microfinance Bank logo" class="card-logo">
+              <div>
+                <h3>IT Compliance</h3>
+                <p class="subheading">U Microfinance Bank</p>
               </div>
-              <p><a href="http://isb.nu.edu.pk/" target="_blank" class="text-decoration-none org-link">isb.nu.edu.pk</a></p>
-            </div>
-          </div>
+            </header>
+            <ul>
+              <li>Performed end-to-end compliance reviews of two key IT systems.</li>
+              <li>Evaluated relevant controls and identified compliance gaps against internal and regulatory requirements.</li>
+              <li>Reviewed system-related evidence and documented observations and recommendations.</li>
+              <li>Coordinated with relevant teams during the review process and follow-up of findings.</li>
+            </ul>
+            <a class="inline-link" href="https://ubank.com.pk/" target="_blank" rel="noopener">ubank.com.pk</a>
+          </article>
+          <article class="card">
+            <p class="muted role-date">May 2024 - Aug 2025</p>
+            <header class="card-head">
+              <img src="img/KMBL.png" alt="Khushhali Microfinance Bank logo" class="card-logo">
+              <div>
+                <h3>IT/IS Auditor</h3>
+                <p class="subheading">Khushhali Microfinance Bank Limited</p>
+              </div>
+            </header>
+            <ul>
+              <li>Executed IT/IS audits independently, ensuring alignment with audit objectives and regulatory standards.</li>
+              <li>Prepared comprehensive workpapers and documented audit findings with minimal need for revision.</li>
+              <li>Assessed internal controls, IT processes, and policy compliance.</li>
+              <li>Coordinated with stakeholders to address control gaps and improve IT governance.</li>
+              <li>Coordinated with SAP AMS vendor to implement system enhancements as per IAD requirements.</li>
+              <li>Collaborated with the CIA and Learning Head to assist new resources during onboarding and training, including assigning mandatory learning courses.</li>
+            </ul>
+            <a class="inline-link" href="https://khushhalibank.com.pk/" target="_blank" rel="noopener">khushhalibank.com.pk</a>
+          </article>
+          <article class="card">
+            <p class="muted role-date">Oct 2021 - May 2022</p>
+            <header class="card-head">
+              <img src="img/sys.png" alt="Systems Limited logo" class="card-logo">
+              <div>
+                <h3>JavaScript Developer Intern</h3>
+                <p class="subheading">Systems Limited</p>
+              </div>
+            </header>
+            <ul>
+              <li>Developed and deployed interactive websites using the MEAN stack.</li>
+              <li>Wrote clear, clean, and testable code for JavaScript-based projects.</li>
+              <li>Collaborated effectively with team members and personnel from the CADM department.</li>
+            </ul>
+            <a class="inline-link" href="https://www.systemsltd.com" target="_blank" rel="noopener">systemsltd.com</a>
+          </article>
+          <article class="card">
+            <p class="muted role-date">Jun 2021 - Sep 2021</p>
+            <header class="card-head">
+              <img src="img/axiom.png" alt="Axiom World logo" class="card-logo">
+              <div>
+                <h3>Python Developer Intern</h3>
+                <p class="subheading">Axiom World</p>
+              </div>
+            </header>
+            <ul>
+              <li>Wrote clear, clean, and testable Python code for an Odoo-based project.</li>
+              <li>Partnered with the Quality Assurance team to verify and implement software development changes, incorporating requested adjustments to ensure quality.</li>
+              <li>Collaborated with backend team members and ERP department personnel to translate business requirements into effective technical solutions.</li>
+            </ul>
+            <a class="inline-link" href="https://www.axiomworld.org/" target="_blank" rel="noopener">axiomworld.org</a>
+          </article>
+        </div>
+      </section>
 
-          <div class="col-lg-3 col-md-6 mb-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
-            <div class="education-card text-center p-3 h-100 shadow-sm rounded">
-              <h4 class="degree mb-2" style="font-size: 1.5rem;">Bachelor of Science in Computer Science (BSCS)</h4>
-              <h5 class="institution mb-2" style="font-size: 1.5rem; color: #6c757d;">Institute of Southern Punjab | 2016 - 2021</h5>
-              <div class="image-container mb-2">
-                 <img src="img/ISP-LOGO.png" alt="ISP Logo" class="img-fluid logo-img" loading="lazy">
+      <section class="section" id="education">
+        <div class="section-header">
+          <p class="eyebrow">Education</p>
+        </div>
+        <div class="card-grid four-up">
+          <article class="card compact">
+            <div class="card-head compact-head">
+              <img src="img/Fast-NUCES.png" alt="FAST NUCES logo" class="card-logo">
+              <div>
+                <p class="muted">2024 - 2026</p>
+                <h3>MS Cyber Security</h3>
+                <p class="subheading">FAST NUCES, Islamabad</p>
               </div>
-              <p><a href="https://www.isp.edu.pk" target="_blank" rel="noopener" class="text-decoration-none org-link">www.isp.edu.pk</a></p>
             </div>
-          </div>
+          </article>
+          <article class="card compact">
+            <div class="card-head compact-head">
+              <img src="img/ISP-LOGO.png" alt="Institute of Southern Punjab logo" class="card-logo">
+              <div>
+                <p class="muted">2016 - 2021</p>
+                <h3>BS Computer Science</h3>
+                <p class="subheading">Institute of Southern Punjab</p>
+              </div>
+            </div>
+          </article>
+          <article class="card compact">
+            <div class="card-head compact-head">
+              <img src="img/colg.png" alt="Punjab Group of Colleges logo" class="card-logo">
+              <div>
+                <p class="muted">2013 - 2015</p>
+                <h3>Intermediate (Pre-Engineering)</h3>
+                <p class="subheading">Punjab Group of Colleges</p>
+              </div>
+            </div>
+          </article>
+          <article class="card compact">
+            <div class="card-head compact-head">
+              <img src="img/nishat.png" alt="Nishat High School logo" class="card-logo">
+              <div>
+                <p class="muted">2003 - 2013</p>
+                <h3>Matriculation (Biology)</h3>
+                <p class="subheading">Nishat High School</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-          <div class="col-lg-3 col-md-6 mb-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.6s">
-            <div class="education-card text-center p-3 h-100 shadow-sm rounded">
-              <h4 class="degree mb-2">Intermediate (Pre-Engineering)</h4>
-              <h5 class="institution mb-2">Punjab Group of Colleges | 2013 - 2015</h5>
-              <div class="image-container mb-2">
-                <img src="img/colg.png" alt="PGC Logo" class="img-fluid logo-img">
-              </div>
-              <p><a href="https://www.pgc.edu" target="_blank" rel="noopener" class="text-decoration-none org-link">www.pgc.edu</a></p>
-            </div>
+      <section class="section" id="contact">
+        <div class="section-header">
+          <p class="eyebrow">Contact</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-grid">
+            <a href="mailto:fawadnaeem045@gmail.com"><i class="fa-solid fa-envelope"></i> fawadnaeem045@gmail.com</a>
+            <a href="tel:+923284016016"><i class="fa-solid fa-phone"></i> +92 328 4016016</a>
+            <a href="https://www.linkedin.com/in/fawadnaeem045/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn profile</a>
+            <a href="portfolio/portfolio.html"><i class="fa-solid fa-folder-open"></i> Project archive</a>
           </div>
+        </div>
+      </section>
+    </main>
 
-          <div class="col-lg-3 col-md-6 mb-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.9s">
-            <div class="education-card text-center p-3 h-100 shadow-sm rounded">
-              <h4 class="degree mb-2">Matriculation (Biology)</h4>
-              <h5 class="institution mb-2">Nishat High School | 2003 - 2013</h5>
-              <div class="image-container mb-2">
-                <img src="img/nishat.png" alt="Nishat School Logo" class="img-fluid logo-img">
-              </div>
-              <p><a href="https://nishat.edu.pk" target="_blank" rel="noopener" class="text-decoration-none org-link">www.nishat.edu.pk</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="heading text-center mb-5">
-        <h2 class="fw-bold">Get In Touch</h2>
-        <div class="heading-line mx-auto mt-3"></div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <p class="lead mb-4">Have a project, opportunity, or just want to say hi? I’m open to collaboration and interesting challenges.</p>
-          <div class="d-flex justify-content-center gap-3 flex-wrap">
-            <a class="btn-brand" href="mailto:fawadnaeem045@gmail.com">Email Me</a>
-            <a class="btn-outline-brand" href="https://www.linkedin.com/in/fawadnaeem045/" target="_blank" rel="noopener">Connect on LinkedIn</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="footer bg-dark text-white py-4" id="footer">
-    <p class="text-center mb-4">
-      <a href="#wrapper" class="gototop text-white"><i class="fa fa-angle-double-up fa-2x"></i></a>
-    </p>
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-12">
-          <ul class="list-inline mb-3">
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/fawadnaeem045/" target="_blank" class="text-white mx-2">
-                <i class="fa fa-linkedin fa-2x"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="mailto:fawadnaeem045@gmail.com" target="_blank" class="text-white mx-2">
-                <i class="fa fa-envelope fa-2x"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="tel:+923284016016" target="_blank" class="text-white mx-2">
-                <i class="fa fa-phone fa-2x"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+    <footer class="site-footer">
+      <a class="back-to-top" href="#top">Back to top</a>
+    </footer>
   </div>
+
   <script>
-    function openNav() {
-      var sidenav = document.getElementById('mySidenav');
-      sidenav.style.width = '250px';
-      sidenav.setAttribute('aria-hidden', 'false');
-      var trigger = document.querySelector('.nav-trigger');
-      if (trigger) trigger.setAttribute('aria-expanded', 'true');
-      var backdrop = document.querySelector('.sidenav-backdrop');
-      if (backdrop) { backdrop.classList.add('show'); }
-      document.body.classList.add('nav-open');
-      var firstLink = sidenav.querySelector('a');
-      if (firstLink) { firstLink.focus(); }
-    }
-
-    function closeNav() {
-      var sidenav = document.getElementById('mySidenav');
-      sidenav.style.width = '0';
-      sidenav.setAttribute('aria-hidden', 'true');
-      var trigger = document.querySelector('.nav-trigger');
-      if (trigger) trigger.setAttribute('aria-expanded', 'false');
-      var backdrop = document.querySelector('.sidenav-backdrop');
-      if (backdrop) { backdrop.classList.remove('show'); }
-      document.body.classList.remove('nav-open');
-    }
-    document.addEventListener('keydown', function(e){
-      if (e.key === 'Escape') closeNav();
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', (!expanded).toString());
+      navLinks.classList.toggle('open');
+      document.body.classList.toggle('nav-open');
     });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('nav-open');
+      });
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js" defer></script>
-  <script src="js/jquery.js" defer></script>
-  <script src="js/modernizr.js" defer></script>
-  <script src="js/bootstrap.min.js" defer></script>
-  <script src="js/parallax.js" defer></script>
-  <script src="js/easing.js" defer></script>
-  <script src="js/wow.js" defer></script>
-  <script src="js/masonry.js" defer></script>
-  <script src="js/imgloaded.js" defer></script>
-  <script src="js/classie.js" defer></script>
-  <script src="js/colorfinder.js" defer></script>
-  <script src="js/gridscroll.js" defer></script>
-  <script src="js/contact.js" defer></script>
-  <script src="js/common.js" defer></script>
-
 </body>
 
 </html>
